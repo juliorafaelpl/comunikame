@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link a los estilos Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Link a AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Link al CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <title>ComuníKame</title>
+</head>
+
+<body>
+    <!-- NAVEGACIÓN -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top vw-100">
+            <div class="container-fluid vw-100">
+                <a class="navbar-brand" href="index.html">ComuníKame</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">ComuníKame- Menú de Navegación</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#index">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#faq">F.A.Q</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonios">Testimonios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://167.114.98.34/cliente/login.php" target="_blank"
+                                    rel="noopener">Usuario</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- SECCIÓN NOSOTROS -->
+    <main id="nosotros">
+        <div class="venta__info">
+            <h2>Conecta a tu vida</h2>
+
+            <p>Somos tu Servicio de Llamadas de preferencia por nuestra:</p>
+            <ul>
+                <li> <strong>Flexibilidad:</strong> Cargas lo que desees consumir, cuando lo necesites.</li>
+                <li><strong>Economía y vigencia:</strong> Llamas más, por menos y sin la presión de consumir de
+                    inmediato.
+                </li>
+                <li><strong>Calidad:</strong> Sin el "reconectando", cortes, ni interrupciones.</li>
+                <li><strong>Seguridad:</strong> Nadie sabrás de dónde llamas, tus llamadas están seguras.</li>
+                <li><strong>Versatilidad:</strong> Conecta desde cualquier dispositivo con acceso a internet.</li>
+                <li><strong>Alcance:</strong> Conectamos a donde otras no llegan... a números fijos y móviles en el
+                    mundo.
+                </li>
+                <li><strong>Ventajas para el Receptor de tu llamada:</strong> No requiere conexión a internet, ni
+                    aplicativo, ni un teléfono inteligente.</li>
+                <li><strong>Garantía de servicio:</strong> Si no logras conectarte, te devolvemos tu pago (*).</li>
+            </ul>
+
+            <p class="venta__info-c2a">Y tú, qué esperas para disfrutarlo. <a href="https://wa.link/bm4q68" target="_blank" rel="noopener"><button class="c2aBtn">Solicitar Servicio</button></a>
+            <p class="venta__info-salvedad">
+                
+                <sup>(*)</sup> Recuerda, la conectividad depende de varios factores. Entre
+                ellos: Tu calidad de servicio de internet (necesario para realizar tus llamadas); Disponibilidad de
+                saldo para realizar tus llamadas y Conectividad en Destino (Existencia de la línea receptora, su
+                inactividad, ocupación de esta línea, problemas con los operadores esta línea "destino" -ajenas a
+                nuestro servicio-) -como las más importantes-.</p>
+        </div>
+        <div class="venta__video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Q_Fn8Bpujok?autoplay=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+    </main>
+    <!-- SECCIÓN PREGUNTAS FRECUENTES -->
+    <section id="faq">
+        <div class="espaciador"></div>
+        <h2 class="faq__title">Preguntas Frecuentes</h2>
+        <strong> Presiona sobre cada pregunta y obtendrás su respuesta</strong>
+        <div class="accordion vw-90" id="accordionExample">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Cuáles son los canales de Atención de ComuníKame?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Nuestro único canal es a través de nuestra Línea de Atención al Usuario a la cual puedes acceder
+                        <a href="https://www.wa.link/tpbvpg" target="_blank" rel="noopener">aquí</a>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cómo Configurar la Aplicación para realizar mis llamadas?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Si eres un "Nuevo Usuario", recuerda que debes habernos contactado,  descargado la app, realizado el pago y haber recibido de nuestra parte tu usuario y contraseña. 
+                        <br>
+                        <strong>Si ya tienes tu usuario y contraseña:</strong> Escanea el siguiente Codigo QR y coloca el usuario y contraseña que te hemos asignado y listo, la app quedará instalada y lista para usar.
+                        <br>
+                        <div class="qrCode">
+                            <img src="https://oem.zoiper.com/qr.php?provider_id=0e514c21c4dc7cbd61cd6257a40a8552&u=&h=&p=&o=&t=&a=&tr=" alt="QR code"/>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Puedo configurar mi usuario en más de un dispositivo a la vez?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        No, para los usuarios particulares y por seguridad, solo se tiene permitido la conexión desde un
+                        solo dispositivo. Por tanto, solo podrás realizar una sola llamada a la vez.
+                        <br>
+                        Si tienes un Negocio de Llamadas, o deseas estabecerlo, por favor contáctanos y con gusto
+                        podemos ofrecerte un plan adecuado a tus necesidades.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        ¿Cómo consulto mi saldo?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Puedes consultar tu saldo de dos(2) formas:
+                        <br>
+                        - Ingresa a la aplicación y llama al número 747 opción 1.
+                        <br>
+                        - Otra opción, es ingresar a tu Portal de Administración del Usuario y allí podrás ver tu saldo
+                        al momento.
+                        <br>
+                        <strong>Recuerda:</strong> En ambos casos, te recordamos que nuestro sistema administrativo está
+                        expresado en "Pesos Colombianos". En tal sentido, al saldo expresado en la plataforma lo divides
+                        entre el costo por minuto (Que en el caso de Venezuela es COP/Min 160) y obtendrás el disponible
+                        en minutos.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        ¿Cuál es la utilidad del Portal de Administración del Usuario?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        A través del portal, podrás acceder a realizar y consultar: Saldos, Consumos y Recargas.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        ¿Cómo ingreso al Portal de Administración del Usuario?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Puedes ingresar dando click en el siguiente <a href="http://167.114.98.34/cliente/login.php"
+                            target="_blank" rel="noopener">enlace</a>. Recuerda:
+                        <br>
+                        <strong>Tu usuario y contraseña son los mismos que te asignamos para configurar la
+                            aplicación.</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        ¿Cuál es la vigencia de mi saldo?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Tu saldo, no tiene una vigencia cuantificada en el sistema; sin embargo, sugerimos mantener
+                        activo el usuario (con llamadas o recargas).
+                        <br>
+                        Queda a libre potestad de ComuníKame, inactivar y eliminar cuentas del sistema, que no registren
+                        actividad en los útimos sesenta (60 dias); sin derecho a devlución para el usuario del saldo que
+                        posea al momento.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        ¿Cómo y cuánto Recargar?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Recargar es sumamente fácil, consulta la tarifa vigente para el destino de tu preferencia, haz
+                        el pago en las cuentas autorizas de lo que necesites consumir (No es necesario que adquieras un
+                        pack de minutos) y reporta tu pago en el Portal de Administración del Usuario, que encontrarás
+                        en nuestro <a href="#nav">menú de navegación</a> o presionando el siguiente <a rel="noopener"
+                            href="http://167.114.98.34/cliente/login.php" target="_blank" rel="noopener">enlace</a> .
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Perdona, hice un reporte de Pago en el Portal de Administración del Usuario, y todavía no se me
+                        hace efectivo.
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Una vez que realizas tu reporte de pago a través del Portal de Administración del Usuario,
+                        nuestro equipo recibe una notificación y atiende tu solicitud por orden de llegada. Una vez
+                        revise la disponibilidad de tu pago en nuestra cuenta bancaria, tu recarga será aprobada para
+                        que disfrutes inmediatamente del servicio. Su solicitud será atendida en el día, siempre y
+                        cuando se realice en un horario laboral.
+                        <br>
+                        Si ha pasado el tiempo reglamentario o tienes una urgencia, puedes comunicarte a nuestra Línea
+                        de Atención al Usuario a través de este <a href="https://wa.link/qdxb9c" target="_blank"
+                            rel="noopener">enlace</a>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        No puedo realizar llamadas. Las Llamadas no salen. ¿Qué hago?
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Antes de contactar a Soporte, por favor, realiza estos procedimientos de
+                            descarte:</strong>
+                        <br>
+                        - <strong>Consulta si tu dispositivo posee acceso a Internet</strong>, que puedas navegar con
+                        facilidad y rapidez por cualquier web. Enviar y recibir mensajes de Whatsapp o acceder a redes
+                        sociales, no grantiza que tengas datos para navegar. Muchos de los servicios de telefonía
+                        celular, incluyen las redes sociales gratis e ilimitadas.
+                        <br>
+                        - <strong>Consuta tu Saldo</strong>, si tu saldo no es suficiente para realizar una llamada,
+                        recuerda que puedes
+                        recargar lo que desees y consideres necesario.
+                        <br>
+                        - Verifica que <strong>estás marcando adecuadamente número de destino</strong>. Recuerda nuestro
+                        protocolo de
+                        discado:
+                        <br>
+                        -- Ejemplos Discado a Números Fijos : 542304444444 , 582125555555 , 13088888888 .
+                        <br>
+                        -- Ejemplos Discado a Números Celulares: 54911555555555 , 584145555555 .
+                        <br>
+                        --- Fórmula de discado: COD PAÍS + COD OPERADOR + NÚMERO (SIN LOS CEROS NI EL "+").
+                        <br>
+                        -Tengo saldo y marco de forma correcta. Entonces, por favor, <strong> ingresa a la aplicación,
+                            su menú, da click en "Salir" y luego, reinicia el teléfono.</strong>
+                        <br>
+                        -Tengo internet, saldo para llamar, marco correctamente, reinicié el teléfono, pero sigo con sin
+                        poder llamar. <strong>Tras haber hecho el descarte completo</strong>, puedes contactar a nuestra
+                        <a href="https://wa.link/ulif8p" target="_blank" rel="noopener">Línea de Atención al
+                            Usuario</a>.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        Perdí mis datos de acceso, borré y desinstalé la aplicación. ¿Cómo los recupero?
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        En este caso, es necesario que te comuniques con nuestra <a href="https://wa.link/ozu1me"
+                            target="_blank" rel="noopener">Línea de Atención al Usuario</a> , para
+                        solicitar la "Recuperación de tus datos de acceso" y la "Asistencia para configurar nuevamente
+                        la aplicación". Recuerda, si no tenías saldo, deberás recargar para poder recuperar tus datos y
+                        el acceso a tu usuario.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- SECCIÓN TESTIMONIOS -->
+    <section id="testimonios">
+        <div class="espaciador"></div>
+        <div class="testimonios__container">
+
+            <div class="block__titulo">
+                <h2>Testimonios</h2>
+                <h4>Nuestros usuarios opinan</h4>
+            </div>
+
+            <div class="block" data-aos="flip-up">
+                <input type="checkbox" class="read-more-state" id="post-1" />
+                <blockquote class="read-more-wrap">
+                    "Excelente emprendimiento, conocí del servicio por anuncios en facebook los contacte y la atención
+                    fue y
+                    ha Sido de primera. Hace mucho que la tengo y es la mejor forma de estar siempre comunicada... <span
+                        class="read-more-target">con mi familia en Venezuela, Sobretodo en épocas dónde el internet allá
+                        no
+                        funciona, han ido creciendo y mejorando cada día la prestación del servicio, sin lugar a dudas
+                        es mi
+                        mejor aliado en esta migración. Recomendados al 100%."</span>
+                </blockquote>
+                <label for="post-1" class="read-more-trigger"></label>
+                <h4>Sandy González</h4>
+
+            </div>
+
+            <div class="block" data-aos="flip-down">
+                <blockquote>
+                    "(...)excelente servicio para comunicarnos con nuestros seres queridos en cualquier lugar del
+                    mundo."
+                </blockquote>
+                <h4>Javier Castro</h4>
+            </div>
+
+            <div class="block" data-aos="flip-up">
+                <blockquote>
+                    "Exelente servicio puedes comunicarte con tus familiares en venezuela sin ningun problema ni
+                    dificulta"
+                </blockquote>
+                <h4>Dayerlin Castillo</h4>
+            </div>
+
+            <div class="block" data-aos="flip-down">
+                <blockquote>
+                    Excelente servicio, puedes llamar a cualquier parte de Venezuela sin que la otra persona tenga
+                    internet. Las llamadas no se cortan y se oye perfectamente.
+                </blockquote>
+                <h4>Adriana Torrealba</h4>
+            </div>
+
+            <div class="block" data-aos="flip-up">
+                <blockquote>
+                    Muy buen servicio, es una excelente opción para comunicarnos con nuestros seres queridos.
+
+                </blockquote>
+                <h4>Mafer Picarello</h4>
+            </div>
+        </div>
+    </section>
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto">
+        <div class="espaciador"></div>
+        <h2>Contacto</h2>
+
+        <form action="https://formsubmit.co/comunikame.adm@gmail.com" method="POST">
+            <div class="row">
+                <div class="col">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre" id="nombre" required>
+                </div>
+                <div class="col">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" placeholder="Apellido" id="apellido" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Apellido</label>
+                <input type="email" class="form-control" id="correo" placeholder="usuario@dominio.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="user" class="form-label">Soy Usuario Comuníkame</label>
+                <select class="form-select" id="user" aria-label="Default select example" required>
+                    <option value="1">Sí</option>
+                    <option value="2">No</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="3" placeholder="Escriba acá su requerimiento"
+                    required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+    <!-- FOOTER -->
+    <footer id="pie">
+        <a class="logo" href="index.html"><img src="img/ComuniKame-PNG.png" alt="logo-comunikame" width="100px"></a>
+        <section class="pie__grid">
+            <div class="pie__grid-empresa">
+                <h5>Sobre Nosotros:</h5>
+                <p>
+                    Facilitamos conectividad, a través de Llamadas bajo el Protocolo de Internet (VOIP) que unen a
+                    familiares, amigos, contactos de negocios, empresas y organizaciones en todo el mundo.
+
+                    Iniciamos en Perú
+                    en 2018; transformando tus datos en una señal telefónica, para que hables como si estuvieras en
+                    casa,
+                    con la calidad y economía que te mereces.
+                </p>
+            </div>
+            <div class="pie__grid-map">
+                <h5>Información</h5>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#faq">Preguntas Frecuentes</a>
+                <a href="#testimonios">Testimonios</a>
+                <a href="http://167.114.98.34/cliente/login.php" target="_blank" rel="noopener">Portal del Usuario</a>
+            </div>
+
+            <div class="pie__grid-links">
+                <h5>Links de Interés:</h5>
+                <a href="pages/politica-de-privacidad.html">Política de Privacidad</a>
+            </div>
+
+            <div class="pie__grid-social">
+                <h5>Contáctanos:</h5>
+                <a href="https://www.instagram.com/comunikame/" target="_blank" target="_blank" rel="noopener"><img
+                        src="img/ig-32.png" alt="link-al-instagram-comunikame"></a>
+                <a href="#" target="_blank" rel="noopener"><img src="img/fb-32.png"
+                        alt="link-al-facebook-comunikame"></a>
+                <a href="https://www.wa.link/tpbvpg" target="_blank" rel="noopener"><img src="img/ws-32.png"
+                        alt="-envia-whatsapp-a-comunikame"></a>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Script de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <!-- Script de AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+
+</html>

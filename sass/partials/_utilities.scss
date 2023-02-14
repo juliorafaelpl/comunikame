@@ -1,0 +1,12 @@
+/* VARIABLES*/
+
+/*COLORES*/
+$negro-oscuro: #20262E;
+$gris-oscuro: #181818;
+
+/*MIXIN*/
+@mixin read-more{
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em;
+}

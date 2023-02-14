@@ -1,0 +1,46 @@
+/*SECCIÓN FOOTER*/
+
+#pie {
+    margin: auto;
+    width: 90vw;
+    margin-top: 30px;
+
+    .pie__grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+
+        .pie__grid-empresa {
+            p {
+                text-align: justify;
+            }
+        }
+
+        .pie__grid-map {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            a {
+                text-decoration: none;
+                color: black;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: blue;
+                }
+            }
+        }
+        .pie__grid-links{
+            a {
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    text-decoration: underline;
+                    color: blue;
+                }
+            }
+        }
+    }
+}

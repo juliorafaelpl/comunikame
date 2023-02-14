@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* VARIABLES*/
+/*COLORES*/
+/*MIXIN*/
+/*RESETEO GENERAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  max-width: 100vw; }
+  body .espaciador {
+    height: 60px; }
+
+/*SECCIÓN FOOTER*/
+#pie {
+  margin: auto;
+  width: 90vw;
+  margin-top: 30px; }
+  #pie .pie__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px; }
+    #pie .pie__grid .pie__grid-empresa p {
+      text-align: justify; }
+    #pie .pie__grid .pie__grid-map {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
+      #pie .pie__grid .pie__grid-map a {
+        text-decoration: none;
+        color: black; }
+        #pie .pie__grid .pie__grid-map a:hover {
+          text-decoration: underline;
+          color: blue; }
+    #pie .pie__grid .pie__grid-links a {
+      text-decoration: none;
+      color: black; }
+      #pie .pie__grid .pie__grid-links a:hover {
+        text-decoration: underline;
+        color: blue; }
+
+/*HTML INDEX*/
+/*SOBRE NOSOTROS*/
+#nosotros {
+  display: flex;
+  flex-direction: column;
+  max-width: 90vw;
+  margin: auto;
+  margin-top: 60px; }
+  #nosotros .venta__info {
+    text-align: justify;
+    flex-basis: 40%; }
+    #nosotros .venta__info .venta__info-c2a {
+      text-align: center; }
+      #nosotros .venta__info .venta__info-c2a .c2aBtn {
+        padding: 5px;
+        border-radius: 8px;
+        background-color: #181818;
+        color: white;
+        -webkit-box-shadow: 5px 5px 8px 1px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 5px 5px 8px 1px rgba(0, 0, 0, 0.6);
+        box-shadow: 5px 5px 8px 1px rgba(0, 0, 0, 0.6);
+        font-weight: 400; }
+        #nosotros .venta__info .venta__info-c2a .c2aBtn:active {
+          animation-name: press;
+          animation-duration: 1.5s; }
+
+@keyframes press {
+  0% {
+    background-color: #20262E;
+    transform: scale(0.9); }
+  50% {
+    transform: scale(0.8); }
+  100% {
+    transform: scale(1); } }
+    #nosotros .venta__info .venta__info-salvedad {
+      font-size: smaller; }
+  #nosotros .venta__video {
+    position: relative;
+    margin-bottom: 20px;
+    padding-top: 56.25%;
+    flex-basis: 60%; }
+    #nosotros .venta__video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
+/*SECCIÓN FAQ*/
+#faq {
+  max-width: 90vw;
+  margin: auto; }
+  #faq .faq__title {
+    margin-bottom: 30px; }
+  #faq .accordion .accordion-button:not(.collapsed) {
+    color: white;
+    background-color: #20262E; }
+  #faq .accordion .accordion-button:after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important; }
+  #faq .accordion .accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0.125); }
+  #faq .accordion .qrCode {
+    text-align: center; }
+
+/*SECCIÓN TESTIMONIOS*/
+#testimonios {
+  max-width: 90vw;
+  margin: auto; }
+  #testimonios .testimonios__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    align-content: center; }
+    #testimonios .testimonios__container .block__titulo {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 30px; }
+      #testimonios .testimonios__container .block__titulo h4 {
+        margin-top: 20px;
+        align-self: flex-end; }
+    #testimonios .testimonios__container .block {
+      height: 350px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px; }
+      #testimonios .testimonios__container .block:nth-child(2) {
+        background-color: #181818; }
+      #testimonios .testimonios__container .block:nth-child(3) {
+        background-color: #20262E; }
+      #testimonios .testimonios__container .block:nth-child(4) {
+        background-color: #181818; }
+      #testimonios .testimonios__container .block:nth-child(5) {
+        background-color: #20262E; }
+      #testimonios .testimonios__container .block:nth-child(6) {
+        background-color: #181818; }
+      #testimonios .testimonios__container .block:nth-child(7) {
+        background-color: #20262E; }
+      #testimonios .testimonios__container .block .read-more-state {
+        display: none; }
+      #testimonios .testimonios__container .block .read-more-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease; }
+      #testimonios .testimonios__container .block .read-more-state:checked ~ .read-more-wrap .read-more-target {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em; }
+      #testimonios .testimonios__container .block .read-more-trigger {
+        display: contents; }
+      #testimonios .testimonios__container .block .read-more-state ~ .read-more-trigger:before {
+        content: 'Más'; }
+      #testimonios .testimonios__container .block .read-more-state:checked ~ .read-more-trigger:before {
+        content: 'Menos'; }
+      #testimonios .testimonios__container .block .read-more-trigger {
+        cursor: pointer;
+        display: inline-block;
+        padding: 0 .5em;
+        color: #666;
+        font-size: .9em;
+        line-height: 2;
+        border: 1px solid #ddd;
+        border-radius: .25em; }
+
+/*SECCIÓN DE CONTACTO*/
+#contacto {
+  max-width: 90%;
+  margin: auto; }
+  #contacto form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 60px; }
+    #contacto form .btn {
+      background-color: #181818;
+      color: white;
+      border-style: hidden;
+      border: 3px transparent;
+      transition: border 1s; }
+      #contacto form .btn:hover {
+        background: rgba(24, 24, 24, 0);
+        font-weight: 600;
+        letter-spacing: 1px;
+        border: 3px solid #d0d0d0; }
+
+/*HTML POLÍTICA DE PRIVACIDAD*/
+#privacidad {
+  width: 90vw;
+  text-align: justify;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  #privacidad h1, #privacidad h2 {
+    text-align: center; }
+
+/*MEDIA QUERIES*/
+@media (max-width: 1023px) {
+  .pie__grid {
+    flex-direction: row;
+    flex-wrap: wrap; } }
+
+@media (min-width: 1024px) {
+  /*Nosotros*/
+  #nosotros {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px; }
+  /*FAQ*/
+  #faq {
+    margin: 60px; }
+  /*Contacto*/
+  #contacto {
+    text-align: center; }
+  /*Footer*/
+  #pie .pie__grid {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 30%; }
+    #pie .pie__grid .pie__grid-empresa {
+      flex-basis: 25%; }
+    #pie .pie__grid .pie__grid-map {
+      flex-basis: 25%; }
+    #pie .pie__grid .pie__grid-links {
+      flex-basis: 25%; }
+    #pie .pie__grid .pie__grid-social {
+      flex-basis: 25%; } }

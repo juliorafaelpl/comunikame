@@ -1,0 +1,50 @@
+/*MEDIA QUERIES*/
+
+@media (max-width: 1023px) {
+    .pie__grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /*Nosotros*/
+    #nosotros {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 20px;
+    }
+
+    /*FAQ*/
+    #faq {
+        margin: 60px;
+    }
+
+    /*Contacto*/
+    #contacto {
+        text-align: center;
+    }
+
+    /*Footer*/
+
+    #pie {
+        .pie__grid {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-basis: 30%;
+            .pie__grid-empresa {
+                flex-basis: 25%;
+            }
+            .pie__grid-map {
+                flex-basis: 25%;
+            }
+            .pie__grid-links {
+                flex-basis: 25%;
+            }
+            .pie__grid-social {
+                flex-basis: 25%;
+            }
+        }
+    }
+}
